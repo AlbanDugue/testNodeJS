@@ -21,6 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(index);
 
 if (process.env.NODE_ENV === "development") {
+  console.log("ENV : " + env);
   app.use(errorHandler());
 } else {
   app.use((err, req, res, next) => {
