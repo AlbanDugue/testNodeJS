@@ -3,8 +3,8 @@ const Url = require("url");
 const https = require("https");
 const http = require("http");
 const app = require("../app");
-const env = require(`../environment/${process.env.NODE_ENV}`);
-// const env = require("../environment/development");
+// const env = require(`../environment/${process.env.NODE_ENV}`);
+const env = require("../environment/development");
 
 const httpServer = http
   .createServer((req, res) => {
